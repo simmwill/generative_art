@@ -12,6 +12,8 @@ library(ggplot2)
 library(ggforce)
 library(wesanderson)
 
+extrafont::loadfonts()
+
 # setup -------------------------------------------------------------------
 
 flower <- tibble(
@@ -79,8 +81,15 @@ flower_plot +
   )
 
 # for README
-ggsave(flower_plot,  # no caption
-       filename = "prompt2_piece1.png",
-       path = here::here("drafts"),
-       dpi = 600
-)
+flower_plot +
+  labs(
+    caption = "Will Simmons"
+  ) +
+  theme(
+    plot.caption = element_text(family = "Roboto")
+  )
+
+  ggsave(filename = "prompt2_piece1.png",
+         path = here::here("drafts"),
+         dpi = 600
+  )
