@@ -21,7 +21,7 @@ vectors <- tibble(
 # plot --------------------------------------------------------------------
 
 set.seed(22)
-prompt1 %>% 
+vectors %>% 
   dplyr::slice_sample(n=50) %>%
   ggplot(
     aes(
@@ -41,7 +41,7 @@ prompt1 %>%
   # ) +
   geom_bar(
     aes(y = df_dn),
-    fill = "#960200",
+    fill = "#F0E5BC",
     stat = "identity"
   ) +
   labs(
@@ -49,10 +49,10 @@ prompt1 %>%
   ) +
   # theme_void() +
   theme(
-    plot.background = element_rect(fill = "#F0E5BC"),
-    panel.background = element_rect(fill = "#F0E5BC"),
+    plot.background = element_rect(fill = "#960200"),
+    panel.background = element_rect(fill = "#960200"),
     panel.grid = element_blank(),
-    plot.caption = element_text(color = "#960200",
+    plot.caption = element_text(color = "#F0E5BC",
                                 size = 5),
     axis.title = element_blank(),
     axis.text = element_blank(),

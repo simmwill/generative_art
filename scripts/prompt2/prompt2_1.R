@@ -62,7 +62,7 @@ flower_plot <-
     plot.background = element_rect(fill = "#F2EDEB"),
     panel.background = element_rect(fill = "#F2EDEB"),
     panel.grid = element_blank(),
-    plot.caption = element_text(color = "#274060",
+    plot.caption = element_text(color = "#1D4930",
                                 size = 5),
     axis.title = element_blank(),
     axis.text = element_blank(),
@@ -86,7 +86,8 @@ flower_plot +
     caption = "Will Simmons"
   ) +
   theme(
-    plot.caption = element_text(family = "Roboto")
+    plot.caption = element_text(family = "Roboto",
+                                color = )
   )
 
   ggsave(filename = "prompt2_piece1.png",
