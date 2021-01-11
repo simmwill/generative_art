@@ -77,7 +77,9 @@ flower_plot +
   ) 
 
   ggsave(filename = "prompt2_piece1.pdf",
-         path = here::here("drafts")
+         path = here::here("drafts"),
+         width = 6,
+         height = 6
   )
 
 # for README
@@ -92,5 +94,7 @@ flower_plot +
 
   ggsave(filename = "prompt2_piece1.png",
          path = here::here("drafts"),
-         dpi = 600
+         dpi = 600,
+         width = 6,
+         height = 6
   )

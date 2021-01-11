@@ -62,5 +62,7 @@ vectors %>%
 # export ------------------------------------------------------------------
 
 ggsave(filename = "prompt1_radial1.pdf",
-       path = here::here("drafts")
+       path = here::here("drafts"),
+       width = 6,
+       height = 6
 )

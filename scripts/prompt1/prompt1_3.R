@@ -68,7 +68,9 @@ wave_plot <-
 
 ggsave(wave_plot,
        filename = "prompt1_radial3.pdf",
-       path = here::here("drafts")
+       path = here::here("drafts"),
+       width = 6,
+       height = 6
 )
 
 # for README
@@ -82,5 +84,7 @@ wave_plot +
 
 ggsave(filename = "prompt1_piece3.png",
        path = here::here("drafts"),
-       dpi = 600
+       dpi = 600,
+       width = 6,
+       height = 6
 )
